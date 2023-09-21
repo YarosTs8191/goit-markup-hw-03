@@ -11,6 +11,10 @@ body {
   background: #fff;
 }
 
+
+.header-navigation{
+  display: flex;
+}
 .header-logo {
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
@@ -21,6 +25,7 @@ body {
   text-transform: uppercase;
   font-style: normal;
   text-decoration: none;
+
 }
 .header-navigation-span {
   color: #2e2f42;
@@ -266,4 +271,14 @@ body {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+/* ============== containers ============= */
+
+.container { 
+max-width: 1440px;
+padding-left: 0; 
+padding-right: 0; 
+margin-left:  
+margin-right:  
 }
