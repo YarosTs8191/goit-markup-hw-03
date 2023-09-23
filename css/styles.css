@@ -11,6 +11,7 @@ body {
   background: #fff;
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 p,
@@ -33,7 +34,6 @@ img {
   width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 2px solid red;
 }
 
 .header .container {
@@ -46,6 +46,7 @@ img {
 
 .header-navigation {
   display: inline-flex;
+  align-items: center;
 }
 .header-logo {
   display: inline-flex;
@@ -94,6 +95,7 @@ img {
   letter-spacing: 0.02em;
   font-family: Roboto;
   font-style: normal;
+  padding: 24px 0;
 }
 
 .header-menu-link:hover,
@@ -141,6 +143,7 @@ img {
 /* ===================== Section 1 =====================*/
 
 title {
+  padding: 188px 0;
 }
 
 .title-container {
@@ -161,7 +164,7 @@ title {
   letter-spacing: 0.02em;
   text-align: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-  min-width: 496px;
+  max-width: 496px;
   margin-bottom: 48px;
 }
 
@@ -181,6 +184,10 @@ title {
   letter-spacing: 0.04em;
   background: #4d5ae5;
   cursor: pointer;
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
 }
 
 .btn:hover,
@@ -196,19 +203,20 @@ title {
 }
 
 .visually-hidden {
+  visibility: hidden;
 }
 
 .advantage-menu {
+  display: flex;
   text-decoration: none;
   list-style: none;
   width: 1128px;
   height: 104px;
   flex-shrink: 0;
-  display: flex;
   gap: 24px;
 }
 .advantage-menu-list {
-  width: calc(100%-24 * 3) / 4;
+  width: calc((100% - 72px) / 4);
   width: 264px;
   height: 72px;
 }
@@ -231,6 +239,10 @@ title {
 }
 
 /* ============== Section 3 ================= */
+
+.team-subcontainer {
+  padding: 32px 0;
+}
 
 .team-container {
   padding-top: 120px;
@@ -263,6 +275,7 @@ title {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .team-menu {
@@ -299,9 +312,15 @@ title {
 
 /* ============== Section 4 ================= */
 
+.portfolio-subcontainer {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
 .portfolio {
-  padding-top: 134px;
-  padding-bottom: 106px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .portfolio-title {
   color: #2e2f42;
@@ -319,7 +338,7 @@ title {
   text-decoration: none;
   list-style: none;
   display: flex;
-  gap: 24px;
+  gap: 48px;
   flex-wrap: wrap;
 }
 .portfolio-list {
@@ -356,6 +375,7 @@ title {
 /* ============== footer ================= */
 
 .footer {
+  padding: 100px 0;
 }
 
 .footer-container {
@@ -383,7 +403,8 @@ title {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
-  margin-bottom: 17.5px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .text-footer {
   color: #f4f4fd;
